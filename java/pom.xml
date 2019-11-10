@@ -26,6 +26,16 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
+        <groupId>com.hphothong.algorithms</groupId>
+        <artifactId>algorithms</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>com.hphothong.datastructures</groupId>
+        <artifactId>data-structures</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>4.11</version>

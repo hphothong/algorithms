@@ -1,6 +1,5 @@
 package com.hphothong.datastructures;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -44,6 +43,8 @@ public class UndirectedGraph<T> {
         for (GraphVertex<T> vertex: this.graphVertices) {
             if (vertex.equals(from)) {
                 vertex.addConnection(to);
+            } else if (vertex.equals(to)) {
+                vertex.addConnection(from);
             }
         }
     }

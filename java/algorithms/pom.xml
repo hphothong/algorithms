@@ -20,6 +20,10 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.hphothong.datastructures</groupId>
+      <artifactId>data-structures</artifactId>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <scope>test</scope>
