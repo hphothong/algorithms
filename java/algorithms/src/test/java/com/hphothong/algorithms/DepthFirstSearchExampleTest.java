@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class BreadthFirstSearchExampleTest {
+public class DepthFirstSearchExampleTest {
 
     private UndirectedGraph<String> graph;
 
@@ -40,11 +40,11 @@ public class BreadthFirstSearchExampleTest {
     }
 
     @Test
-    public void testBreadthFirstSearch() {
+    public void testDepthFirstSearch() {
         Collection<UndirectedGraph<String>.GraphVertex<String>> expectedVertices = this.graph.getGraphVertices();
         List<String> expectedValues = expectedVertices.stream().map(UndirectedGraph.GraphVertex::getValue).collect(Collectors.toList());
 
-        Collection<UndirectedGraph<String>.GraphVertex<String>> actualVertices = new BreadthFirstSearchExample<String>().breadthFirstSearch(this.graph);
+        Collection<UndirectedGraph<String>.GraphVertex<String>> actualVertices = new DepthFirstSearchExample<String>().depthFirstSearch(this.graph);
         List<String> actualValues = actualVertices.stream().map(UndirectedGraph.GraphVertex::getValue).collect(Collectors.toList());
 
         for (String value : expectedValues) {
